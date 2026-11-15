@@ -3,9 +3,9 @@ import google.generativeai as genai
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filters
 
-# Cevre degiskenlerinden (Render'dan) sifreleri guvenli bir sekilde al?yoruz
-TELEGRAM_BOT_TOKEN = os.environ.get("9095217892:AAFJ5RoTiqD03w9CktFq4KVxfkilres532M")
-GEMINI_API_KEY = os.environ.get("AQ.Ab8RN6IfIVswKyuSS6J-bHbPZ5yX_JFu8hpgExQfBTJa3pHoRw")
+# Sifreleriniz koda dogrudan tan?mland?
+TELEGRAM_BOT_TOKEN = "9095217892:AAFJ5RoTiqD03w9CktFq4KVxfkilres532M"
+GEMINI_API_KEY = "AQ.Ab8RN6IfIVswKyuSS6J-bHbPZ5yX_JFu8hpgExQfBTJa3pHoRw"
 
 # Google Gemini modelini ayarl?yoruz
 genai.configure(api_key=GEMINI_API_KEY)
